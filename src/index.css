@@ -15,6 +15,9 @@ code {
 button {
   border: none;
 }
+input {
+  border: none;
+}
 
 .container {
   width: 900px;

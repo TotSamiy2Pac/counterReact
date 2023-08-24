@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
-const Button = ({myOnClick, title, disabled}) => {
+const Button = ({clickOperand,value}) => {
     return (
-        <button className='operand' onClick={myOnClick}>{title}</button>
+        <input className={'operand'} type="button" value={value} onClick={event => {
+            clickOperand(event.target.value)
+        }}/>
     );
 };
 
